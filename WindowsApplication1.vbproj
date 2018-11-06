@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DAA0FA3F-C68E-4AD7-9783-5DEA9AEF121D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TransbarcaSystem.My.MyApplication</StartupObject>
+    <RootNamespace>TransbarcaSystem</RootNamespace>
+    <AssemblyName>TransbarcaSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>F:\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TransbarcaSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TransbarcaSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>129FFB68F05A1F3F2CE50698D181665173BCC5E2</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WindowsApplication1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>descarga~4.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 6.6.4\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accion.Designer.vb">
+      <DependentUpon>Accion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Accion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="funciones.vb" />
+    <Compile Include="Iniciar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iniciar.Designer.vb">
+      <DependentUpon>Iniciar.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulebd.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="eliminar.Designer.vb">
+      <DependentUpon>eliminar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="eliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recorset.vb" />
+    <Compile Include="Rutas.Designer.vb">
+      <DependentUpon>Rutas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rutas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transportista.Designer.vb">
+      <DependentUpon>transportista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="transportista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usuario.Designer.vb">
+      <DependentUpon>usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehiculo.Designer.vb">
+      <DependentUpon>Vehiculo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vehiculo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accion.resx">
+      <DependentUpon>Accion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iniciar.resx">
+      <DependentUpon>Iniciar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eliminar.resx">
+      <DependentUpon>eliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rutas.resx">
+      <DependentUpon>Rutas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transportista.resx">
+      <DependentUpon>transportista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usuario.resx">
+      <DependentUpon>usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehiculo.resx">
+      <DependentUpon>Vehiculo.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="descarga~4.ico" />
+    <None Include="Resources\slir.png" />
+    <None Include="Resources\registro1.png" />
+    <None Include="Resources\logout-png-image-54491.png" />
+    <None Include="Resources\Entrar.png" />
+    <None Include="Resources\bien.png" />
+    <None Include="Resources\banco.png" />
+    <None Include="Resources\2203555 - battery death empty energy.png" />
+    <None Include="Resources\2203554 - battery charging electrici.png" />
+    <None Include="Resources\2203553 - home house resident root.png" />
+    <None Include="Resources\2203552 - email inbox letter send.png" />
+    <None Include="Resources\2203551 - book calendar date monthly.png" />
+    <None Include="Resources\2203550 - discount price promotion t.png" />
+    <None Include="Resources\2203549 - admin avatar human login u.png" />
+    <None Include="Resources\2203548 - compass map navigation nor.png" />
+    <None Include="Resources\2203547 - count stop time watch.png" />
+    <None Include="Resources\2203546 - bin delete gabage trash.png" />
+    <None Include="Resources\2203545 - battery charge energy low.png" />
+    <None Include="Resources\2203544 - battery charge energy half.png" />
+    <None Include="Resources\2203543 - battery charge energy redu.png" />
+    <None Include="Resources\2203542 - block copy front square.png" />
+    <None Include="Resources\2203541 - gps location place service.png" />
+    <None Include="Resources\2203540 - bar chart stat statistic.png" />
+    <None Include="Resources\2203539 - appearance gear process se.png" />
+    <None Include="Resources\2203538 - alarm bell notification ri.png" />
+    <None Include="Resources\2203537 - chat conversation message .png" />
+    <None Include="Resources\2203536 - bin can recycle trash.png" />
+    <None Include="Resources\2203535 - botton launch on point.png" />
+    <None Include="Resources\2203534 - cash coin money value.png" />
+    <None Include="Resources\2203533 - gesture hand like love.png" />
+    <None Include="Resources\2203532 - card credit debit payment.png" />
+    <None Include="Resources\2203531 - block hexagon polygon scre.png" />
+    <None Include="Resources\2203530 - connect direction path way.png" />
+    <None Include="Resources\2203529 - app block menu setting til.png" />
+    <None Include="Resources\2203528 - lound sound speaker volume.png" />
+    <None Include="Resources\2203527 - mute sound speaker volume.png" />
+    <None Include="Resources\2203526 - camera digital photo snap.png" />
+    <None Include="Resources\2203525 - arrow botton menu up.png" />
+    <None Include="Resources\2203524 - arrow botton down menu.png" />
+    <None Include="Resources\2203523 - arrow back botton left.png" />
+    <None Include="Resources\2203522 - arrow botton next right.png" />
+    <None Include="Resources\2203521 - chart graph pie stat.png" />
+    <None Include="Resources\2203520 - circle dot record round.png" />
+    <None Include="Resources\2203519 - back backward before behin.png" />
+    <None Include="Resources\2203518 - block cube music square st.png" />
+    <None Include="Resources\2203517 - fast forward move play.png" />
+    <None Include="Resources\2203516 - music pause play player.png" />
+    <None Include="Resources\2203515 - media music play triangle.png" />
+    <None Include="Resources\2203514 - good like popular thumbs u.png" />
+    <None Include="Resources\2203513 - bad dislike down thumbs.png" />
+    <None Include="Resources\2203512 - burger menu more panel.png" />
+    <None Include="Resources\2203511 - find glass look magnify se.png" />
+    <None Include="Resources\2203510 - favorite favourite heart l.png" />
+    <None Include="Resources\2203509 - cloud data online storage.png" />
+    <None Include="Resources\2203508 - find glass magnify search.png" />
+    <None Include="Resources\2203506 - location map pin place.png" />
+    <None Include="Resources\2203505 - battery charge energy full.png" />
+    <None Include="Resources\1020792-200.png" />
+    <None Include="Resources\4891b5f6c604304b74f030ce8a13f762-icono-de-signo-de-interrogaci-n-3d-rojo-by-vexels.png" />
+    <None Include="Resources\38397060-aceptar-rojo-icono-plana-verificación-de-signo.jpg" />
+    <None Include="Resources\42342950-cajero-automático-registro-icono-de-línea-delgada-para-web-y-diseño-plano-móvil-minimalista-vector-icono-blanc.jpg" />
+    <None Include="Resources\icono-salida-big.png" />
+    <None Include="Resources\depositphotos_99958488-stock-illustration-exit-icon-for-web-and.jpg" />
+    <None Include="Resources\depositphotos_104542178-stock-illustration-edit-records-flat-round-icon.jpg" />
+    <None Include="Resources\soporte.png" />
+    <None Include="Resources\botón-redondo-rojo-especial-del-icono-de-la-lupa-104802166.jpg" />
+    <None Include="Resources\tech-support-icon-premium-red-round-button-isolated-abstract-illustration-89297392.jpg" />
+    <None Include="Resources\ayuda-info.png" />
+    <None Include="Resources\post-para-Prensa-Atención-al-Turista-240x207.jpg" />
+    <None Include="Resources\bfc3bcbb9ca525fbf3d0179e239cfe96.png" />
+    <None Include="Resources\registro.png" />
+    <None Include="Resources\edit-validated256_25237.png" />
+    <None Include="Resources\Crystal_Clear_action_exit.png" />
+    <None Include="Resources\flecha-hacia-atras-esbozar_318-8503.jpg" />
+    <None Include="Resources\descarga.png" />
+    <None Include="Resources\descarga.jpg" />
+    <None Include="Resources\bus-red.png" />
+    <None Include="Resources\choferes.png" />
+    <None Include="Resources\detalle.png" />
+    <None Include="Resources\1486564399-close_81512.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
